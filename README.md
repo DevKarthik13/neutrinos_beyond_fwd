@@ -12,7 +12,7 @@ The script `grid.py` lists all basis states that are activated by the repeated a
 - `filename`: output filename. The script will create two files: `filename`\_p.dat in which momentum modes are stored, and `filename`\_s.dat in which basis states (mod flavor degree of freedom) are stored.
 - `pmax`: The `zmax` in Eq.(67) of the reference above.
 
-The reference state is set in line 84. You will specify the momentum modes that are initially occupied. Note that each momentum modes can be occupied only up to 2 times, since the code assumes the 2-flavor case.
+The reference state is set in line 84. You will specify the momentum modes that are initially occupied. Note that each momentum mode can be occupied only up to 2 times in the reference state --- the scripts consider only the 2-flavor case.
 
 ## Performing time evolution 
 The script `kec.py` simulates time evolution of a neutrino system via the full Hamiltinian with the pair-wise kinetic energy conservation. Two inputs to the script are
