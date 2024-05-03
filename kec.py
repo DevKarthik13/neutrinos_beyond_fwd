@@ -4,11 +4,8 @@
 # 2 flavor
 # 3+1 dimensions
 
-from itertools import combinations
 import numpy as np
-import matplotlib.pyplot as plt
 import sys
-import time
 
 # Set parameters in the Hamiltonianin unit of f=GF/sqrt(2)/V
 angle = 26.56/180.*np.pi #Sin(2*angle)=0.8
