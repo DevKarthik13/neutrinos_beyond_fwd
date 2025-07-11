@@ -67,12 +67,6 @@ for i in range(Ns):
     bstr_to_j[b] = i 
     j_to_bstr[i] = b
 
-# import initial states
-
-#with open(scanfile, 'r') as f:
-#    for lines in f.readlines():
-#        scan = [int( x) for x in lines.split(' ')]
-#print('initial states: ', *scan)
 
 print(f'The number of basis states: {Ns}')
 print(f'The number of neutrinos: {Nn}')
@@ -277,7 +271,6 @@ def observable(state):
 
 # returns string of time and wave function amplitude
 def print_cstr(state,i):
-    obs = observable(state)
     return str(i*dt) + ' ' + ' '.join([str(x) for x in state]) 
 
 # returns string of time and occupation number per bin
