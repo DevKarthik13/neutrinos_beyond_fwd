@@ -101,8 +101,7 @@ def bin(p, flavor):
 
 # given bin index (0 - Nb-1), returns momenta(index) and flavor
 def pf(i):
-    return i%2, i//2
-
+    return i//2, i%2
 
 # Applying a*(b1)a(b2) to a basis state, b = [b1,b2]
 def quad(b, basis):
